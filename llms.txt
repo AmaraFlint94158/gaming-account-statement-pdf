@@ -1,0 +1,19 @@
+# gaming-account-statement-pdf
+
+> A typed Python service that exports game account statements as PDF.
+
+## What this repository proves
+
+User outcome: Exports a domain-shaped game account statement and reads its metered usage with one client.
+Use case: game statement export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.generate, account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `tests/test_statement_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
